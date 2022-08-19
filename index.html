@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Your Alarm Clock</title>
+    <style>
+        .content.disable {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-500 flex justify-center">
+    <div class="main flex items-center justify-center flex-col">
+        <div>
+        </div>
+        <div class="rounded container bg-white w-full p-4 my-40 ">
+            <img src="clock.svg" alt="" class="m-auto w-[74px]">
+            <h1 class="text-center text-3xl my-3 font-bold">00:00:00 PM</h1>
+
+            <div class="content flex justify-center text-lg my-5">
+
+                <div class="column border-2 flex px-1 rounded justify-center p-2">
+                    <select name="" id="" class="">
+                        <option value="Hour" selected hidden class="">Hour</option>    
+                    </select>
+                </div>
+
+                <div class="column border-2 px-1 flex mx-2 rounded justify-center p-2">
+                    <select name="" id="">
+                        <option value="Minutes" selected hidden>Minutes</option>
+                    </select>
+                </div>
+
+                <div class="column px-1 border-2 rounded flex justify-center">
+                    <select name="" id="">
+                    <option value="AM/PM" selected hidden>AM/PM</option>
+                    </select>
+                </div>
+
+            </div>
+            <button id="btn" class="w-full text-center bg-blue-500 text-white font-medium rounded p-2 text-xl" onclick="setAlarm()">Set Alarm</button>
+        </div>
+        <h2 class="text-white text-3xl font-bold -my-28">Ready ! Set ! Go ✌️</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
